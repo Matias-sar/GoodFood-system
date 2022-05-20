@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Joti+One&display=swap');
+/*
+font-family: 'Inter', sans-serif;
+font-family: 'Joti One', cursive;
+*/
+
+/*Colores*/
+:root{
+    --Letras_logo: #E38800;
+    --Letras_card: #E38800;
+    --Letras_Menu: #6D6D6D;
+    --Border_input_login: #D2D2D2;
+    --Border_input_formularios: #E9E9E9;
+    --Button_inicio_session: #E38800;
+    --Button_inicio_session_letras: #fff;
+
+    --Button_inicio_cerrar_session: #FFD99F;
+    --Button_inicio_cerrar_session_letras: #FF9C08;
+
+    --Button_agregar: #A2DDFF;
+    --Button_agregar_letras: #0067DF;
+
+    --Button_editar: #AFFFA2;
+    --Button_editar_letras: #1FDF00;
+
+    --Button_eliminar: #FFA2A2;
+    --Button_eliminar_letras: #DF0000;
+
+    --Button_pedidos: #C5A2FF;
+    --Button_pedidos_letras: #7000DF;
+
+}
+
+.text-color-logo {
+    color: var(--Letras_logo);
+    font-size: 30px;
+    font-family: 'Joti One', cursive;
+}
+
+.text-color-menu {
+    color: var(--Letras_Menu);
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.text-color-menu-2 {
+    color: var(--Letras_Menu);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+
+.container-itens-menu{
+    margin-left: auto;
+}
+
+/*
+Modificado
+flex inline-flex w-full
+*/
