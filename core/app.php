@@ -5,7 +5,7 @@
             $url = $_GET['url'];
             $arregloUrl = explode('/',$url);
             $controlador = empty($arregloUrl[0])?'inicio':$arregloUrl[0];
-            $metodo = empty($arregloUrl[1])?'home':$arregloUrl[1];
+            $metodo = empty($arregloUrl[1])?'login':$arregloUrl[1];
             // Url del controlador
             $urlControlador='controllers/'.$controlador.'.php';
             if(file_exists($urlControlador)){
