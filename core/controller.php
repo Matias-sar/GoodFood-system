@@ -32,7 +32,7 @@
         }
 
         public function validarLogin(){
-            if(isset($__SESSION['usuario'])){
+            if(isset($_SESSION['usuario'])){
                 return true;
             }else{
                 $pagina = 'inicio/login';

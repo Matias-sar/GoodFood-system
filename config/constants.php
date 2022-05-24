@@ -1,4 +1,4 @@
 <?php
     // Constante de url
-    define('URL','http://localhost/GoodFood/')
+    define('URL','http://localhost/GoodFood-system/');
 ?>
