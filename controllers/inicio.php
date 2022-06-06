@@ -13,7 +13,7 @@
       public function login(){
          if(!empty($_POST)){
             $this->getModel()->setUsuario($_POST['username']);
-            $this->getModel()->setPassword(md5($_POST['password']));
+            $this->getModel()->setPassword($_POST['password']);
 
             $nivel = $this->getModel()->validarLogin();
             if(!empty($nivel)){

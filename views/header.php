@@ -17,7 +17,7 @@
                 if($_SESSION['nivel'] == 1){                
                 ?>
                 <li class = "py-4">
-                    <a href = "" class = "px-7 py-4 font-bold text-zinc-500 hover:text-zinc-400 focus:text-zinc-400">Usuario</a>
+                    <a href = "<?=URL?>usuario/index" class = "px-7 py-4 font-bold text-zinc-500 hover:text-zinc-400 focus:text-zinc-400">Usuario</a>
                 </li>
                 <?php
                 }
@@ -26,16 +26,16 @@
                 if($_SESSION['nivel'] == 2 || $_SESSION['nivel'] == 1){                
                 ?>
                 <li class = "py-4">
-                    <a href = "#" class = "px-7 py-4 font-bold text-zinc-500 hover:text-zinc-400 focus:text-zinc-400">Clientes</a>
+                    <a href = "<?=URL?>cliente/index" class = "px-7 py-4 font-bold text-zinc-500 hover:text-zinc-400 focus:text-zinc-400">Clientes</a>
                 </li>
                 <?php
                 }
                 ?>
                 <li class = "py-4">
-                    <a href = "#" class = "px-7 py-4 font-bold text-zinc-500 hover:text-zinc-400 focus:text-zinc-400">Productos</a>
+                    <a href = "<?=URL?>producto/index" class = "px-7 py-4 font-bold text-zinc-500 hover:text-zinc-400 focus:text-zinc-400">Productos</a>
                 </li>
                 <li class = "py-4">
-                    <a href = "#" class = "px-7 py-4 font-bold text-zinc-500 hover:text-zinc-400 focus:text-zinc-400">Productos en existencias</a>
+                    <a  href="<?=URL?>informe/existencia"class = "px-7 py-4 font-bold text-zinc-500 hover:text-zinc-400 focus:text-zinc-400">Reporte Productos en existencia</a>
                 </li>
                 <?php
                 if($_SESSION['nivel'] == 1){                
@@ -46,6 +46,10 @@
                 <?php
                 }
                 ?>
+                    <li class = "py-4">
+                    <a href = "<?=URL?>grafico/circular" class = "px-7 py-4 font-bold text-zinc-500 hover:text-zinc-400 focus:text-zinc-400">Grafica</a>
+                    </li>
+                
                 <li class = "py-4 pl-6">
                     <button class = "bg-orange-300 p-2 px-4 rounded-full font-bold text-orange-500 hover:bg-orange-200">
                         <a href="<?=URL?>inicio/logout">Cerrar session</a>
